@@ -98,6 +98,6 @@
 
 <div align="center">
 
-Made with 🌿 by [a4ifka](https://github.com/a4ifka)
+Made with 🌿 by a4ifka & Epl-Grey
 
 </div>
