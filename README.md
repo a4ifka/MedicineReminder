@@ -8,7 +8,7 @@
   ![Platform](https://img.shields.io/badge/Platform-Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)
   ![Language](https://img.shields.io/badge/Kotlin%20%2F%20Java-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white)
   ![Database](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
-  ![UI](https://img.shields.io/badge/XHTML-Adaptive%20UI-FF6B35?style=for-the-badge)
+  ![UI](https://img.shields.io/badge/XML-Adaptive%20UI-FF6B35?style=for-the-badge)
 
 </div>
 
