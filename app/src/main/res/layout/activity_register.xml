@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".activities.RegisterActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        >
+
+
+        <TextView
+            android:id="@+id/autorization"
+
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Регистрация"
+            android:textSize="40dp"
+            android:fontFamily="@font/montserratsemibold"
+            android:textAppearance="@style/welcom"
+            android:paddingLeft="24dp"
+            android:textColor="@color/black"
+            />
+
+
+        <EditText
+            android:layout_below="@id/autorization"
+            android:id="@+id/email_edit_text"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textSize="18dp"
+            android:layout_marginTop="160dp"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:background="@drawable/rounded_rectangle"
+            android:hint="Ваша почта"
+            android:textColorHint="@color/green_white"
+            android:fontFamily="@font/montserratmedium"
+
+            />
+
+        <EditText
+            android:layout_below="@id/email_edit_text"
+            android:id="@+id/name_edit_text"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textSize="18dp"
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:hint="Ваше имя"
+            android:background="@drawable/rounded_rectangle"
+            android:textColorHint="@color/green_white"
+            android:fontFamily="@font/montserratmedium"
+            />
+
+        <EditText
+            android:layout_below="@id/name_edit_text"
+            android:id="@+id/password_edit_text"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textSize="18dp"
+            android:layout_width="match_parent"
+            android:hint="Ваш пароль"
+            android:layout_marginTop="12dp"
+            android:inputType="textPassword"
+            android:layout_height="46dp"
+            android:background="@drawable/rounded_rectangle"
+            android:textColorHint="@color/green_white"
+            android:fontFamily="@font/montserratmedium"/>
+
+
+        <EditText
+            android:id="@+id/repeat_password_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginTop="12dp"
+            android:layout_below="@id/password_edit_text"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textSize="18dp"
+            android:layout_marginBottom="20dp"
+            android:hint="Повторите пароль"
+            android:inputType="textPassword"
+            android:background="@drawable/rounded_rectangle"
+            android:textColorHint="@color/green_white"
+            android:fontFamily="@font/montserratmedium"/>
+
+        <Button
+            android:layout_below="@id/repeat_password_edit_text"
+            android:id="@+id/submit_register"
+            android:layout_width="209dp"
+            android:layout_height="45dp"
+            android:text="Войти"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:fontFamily="@font/montserratmedium"
+            android:textSize="20sp"
+            android:layout_marginLeft="120dp"
+            android:layout_marginRight="120dp"
+            android:background="@drawable/rounded_buttom"
+            android:layout_marginTop="10dp"/>
+
+
+    </RelativeLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

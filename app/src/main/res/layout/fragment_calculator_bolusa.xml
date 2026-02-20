@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.CalculatorBolusa">
+
+
+    <TextView
+        android:id="@+id/textCalc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:gravity="top"
+        android:lineSpacingExtra="-32sp"
+        android:text="Калькулятор"
+        android:fontFamily="@font/montserratsemibold"
+        android:textAppearance="@style/some_id2" />
+
+    <TextView
+        android:id="@+id/q"
+        android:layout_width="311dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/textCalc"
+
+        android:lineSpacingExtra="-32sp"
+        android:text="Болюса"
+        android:fontFamily="@font/montserratsemibold"
+        android:textAppearance="@style/some_id2" />
+
+    <TextView
+        android:id="@+id/rec"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="15dp"
+        android:textColor="#F80000"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/q"
+        android:fontFamily="@font/inter"
+        android:text="Не является рекомендацией! Перед инъекцией проверьте рассчет!"
+        android:textSize="16sp"
+        android:textAppearance="@style/medicine_re"/>
+
+
+
+    <EditText
+        android:id="@+id/editGluk"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/rec"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="20dp"
+        android:inputType="number"
+        android:hint="Текущая глюкоза(ммол/л)"
+        android:fontFamily="@font/montserratmedium"
+        style="@style/some_id"
+        android:background="@drawable/rounded_rectangle"
+        android:textSize="16sp"/>
+
+
+    <EditText
+        android:id="@+id/editYglev"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+     android:layout_below="@id/editGluk"
+        android:inputType="number"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:hint="Углеводы(ХЕ)"
+        style="@style/some_id"
+        android:fontFamily="@font/montserratmedium"
+        android:background="@drawable/rounded_rectangle"
+        android:textSize="16sp"/>
+
+
+
+    <EditText
+        android:id="@+id/editFCHI"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/editGluk"
+        android:inputType="number"
+        android:layout_toRightOf="@id/editYglev"
+        android:layout_marginLeft="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:hint="ФЧИ(ммол/л)"
+        style="@style/some_id"
+        android:background="@drawable/rounded_rectangle"
+        android:fontFamily="@font/montserratmedium"
+        android:textSize="16sp"/>
+
+
+
+    <EditText
+        android:id="@+id/editYK"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/editYglev"
+        android:inputType="number"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:hint="Утренний УК(ЕД/ХЕ)"
+        android:textSize="16sp"
+        android:fontFamily="@font/montserratmedium"
+        style="@style/some_id"
+        android:background="@drawable/rounded_rectangle"/>
+
+
+
+    <EditText
+        android:id="@+id/editActivationInsulin"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/editYK"
+        android:inputType="number"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:hint="Активный инсулин(ЕД)"
+        style="@style/some_id"
+        android:background="@drawable/rounded_rectangle"
+        android:fontFamily="@font/montserratmedium"
+        android:textSize="16sp"/>
+
+
+
+    <EditText
+        android:layout_below="@id/editActivationInsulin"
+        android:id="@+id/editCelGluk"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="number"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:hint="Целевая глюкоза(ммол/л)"
+        android:textSize="16sp"
+        style="@style/some_id"
+        android:fontFamily="@font/montserratmedium"
+        android:background="@drawable/rounded_rectangle"/>
+
+    <Button
+        android:id="@+id/btnCalculate"
+        android:layout_width="208dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:text="Рассчитать"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/montserratmedium"
+        android:layout_centerHorizontal="true"
+        android:textAllCaps="false"
+        android:background="@drawable/rounded_buttom"
+        android:layout_below="@id/editCelGluk" />
+
+
+
+</RelativeLayout>
